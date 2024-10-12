@@ -1,0 +1,28 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="base.html/base.css" />
+
+<div class="about-section">
+
+  <p>Craft Corner</p>
+  <p>a place where creativity and community come together</p>
+</div>
+<center>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="mypic" src="{% static 'images/Profile.jpg' %}" alt="Profile" width="300" height="300">
+      <div class="container">
+        <h2>Arlyn Mae</h2>
+        <p class="title">CEO & Founder</p>
+
+        <p>arlyn@yahoo.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</center>
+{% endblock content %}
